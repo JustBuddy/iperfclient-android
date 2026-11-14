@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" translatable="false">iPerf</string>
+
+    <!-- Navigation -->
+    <string name="nav_test">Speed test</string>
+    <string name="nav_history">History</string>
+    <string name="nav_servers">Servers</string>
+
+    <!-- Test stages -->
+    <string name="stage_ready">Ready</string>
+    <string name="stage_done">Test complete</string>
+    <string name="stage_stopping">Finishing…</string>
+    <string name="stage_busy_port">Server busy, trying port %1$d…</string>
+    <string name="stage_connecting">Connecting…</string>
+    <string name="stage_negotiating">Setting up streams…</string>
+    <string name="stage_finishing">Collecting results…</string>
+    <string name="round_n">Round %1$d</string>
+    <string name="ping">Ping</string>
+    <string name="download">Download</string>
+    <string name="upload">Upload</string>
+    <string name="both_ways">Both ways</string>
+    <string name="ping_short">%1$s ms ping</string>
+    <string name="jitter_value">Jitter %1$s ms</string>
+    <string name="jitter_tcp">TCP · jitter %1$s ms</string>
+    <string name="loaded_ms">Loaded %1$s ms</string>
+    <string name="average">Average</string>
+
+    <!-- Actions -->
+    <string name="action_start">Start</string>
+    <string name="action_again">Again</string>
+    <string name="action_stop">Stop</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_back">Back</string>
+    <string name="action_dismiss">Dismiss</string>
+    <string name="action_change_server">Change server</string>
+    <string name="action_clear_history">Clear history</string>
+    <string name="action_clear">Clear</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_add_server">Add server</string>
+    <string name="action_restore_public">Restore public servers</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_save">Save</string>
+    <string name="action_delete_server">Delete server</string>
+
+    <!-- Server and connection -->
+    <string name="no_server">No server</string>
+    <string name="no_server_hint">Add an iperf3 server to start</string>
+    <string name="connection">Connection</string>
+    <string name="net_none">Not connected</string>
+    <string name="net_wifi">Wi‑Fi</string>
+    <string name="net_wifi_gen">Wi‑Fi %1$d</string>
+    <string name="net_link">%1$d Mbps link</string>
+    <string name="net_ethernet">Ethernet</string>
+    <string name="net_mobile">Mobile data</string>
+    <string name="net_vpn">VPN</string>
+
+    <!-- Options -->
+    <string name="opt_mode">Test</string>
+    <string name="mode_full">Full</string>
+    <string name="mode_both">Both</string>
+    <string name="opt_continuous">Continuous</string>
+    <string name="opt_continuous_single">Keep measuring until you tap Stop</string>
+    <string name="opt_continuous_full">Repeat ping, download and upload until you tap Stop</string>
+    <string name="opt_continuous_ping">Keep pinging until you tap Stop</string>
+    <string name="opt_protocol">Protocol</string>
+    <string name="opt_streams">Parallel streams</string>
+    <string name="opt_duration">Duration</string>
+    <string name="opt_duration_each">Duration of each direction</string>
+    <string name="opt_udp_rate">UDP target bitrate</string>
+
+    <!-- Chart -->
+    <string name="chart_title">Throughput</string>
+    <string name="chart_empty">Start a test to see throughput over time.</string>
+    <string name="stat_avg">Average</string>
+    <string name="stat_low">Min</string>
+    <string name="stat_peak">Peak</string>
+    <string name="stat_data">Data</string>
+    <string name="stat_min">Min</string>
+    <string name="stat_median">Median</string>
+    <string name="stat_max">Max</string>
+    <string name="latency">Latency</string>
+    <string name="lost">Lost</string>
+    <string name="loss">Loss</string>
+    <string name="median_value">Median %1$s ms</string>
+    <string name="range_value">%1$s–%2$s ms</string>
+    <string name="loss_short">%1$s %% loss</string>
+    <string name="detail_replies">Probes</string>
+    <string name="chart_empty_ping">Start pinging to see latency over time.</string>
+    <string name="continuous_hint">Measuring until you tap Stop. Walk around to find weak spots.</string>
+
+    <!-- Errors -->
+    <string name="err_busy">The server is busy</string>
+    <string name="err_unreachable">Can\'t reach the server</string>
+    <string name="err_unknown_host">Server address not found</string>
+    <string name="err_timeout">The server stopped responding</string>
+    <string name="err_udp">UDP is blocked</string>
+    <string name="err_auth">The server needs a password</string>
+    <string name="err_duration">The server limits test length</string>
+    <string name="err_local_network">Local network access is off</string>
+    <string name="err_local_network_detail">Allow “Nearby devices” so the app can reach servers on your network.</string>
+    <string name="action_open_settings">Open settings</string>
+    <string name="err_ping_blocked">No replies to ping</string>
+    <string name="err_generic">The test failed</string>
+
+    <!-- History -->
+    <plurals name="stage_done_rounds">
+        <item quantity="one">%1$d round complete</item>
+        <item quantity="other">%1$d rounds complete</item>
+    </plurals>
+    <plurals name="ping_count">
+        <item quantity="one">%1$d reply</item>
+        <item quantity="other">%1$d replies</item>
+    </plurals>
+    <plurals name="lost_short">
+        <item quantity="one">%1$d/%2$d lost</item>
+        <item quantity="other">%1$d/%2$d lost</item>
+    </plurals>
+    <plurals name="lost_of">
+        <item quantity="one">%1$d of %2$d lost</item>
+        <item quantity="other">%1$d of %2$d lost</item>
+    </plurals>
+    <plurals name="tests_count">
+        <item quantity="one">%1$d test</item>
+        <item quantity="other">%1$d tests</item>
+    </plurals>
+    <plurals name="streams_count">
+        <item quantity="one">%1$d stream</item>
+        <item quantity="other">%1$d streams</item>
+    </plurals>
+    <string name="history_recent">Recent tests</string>
+    <string name="history_empty">Your test results will show up here.</string>
+    <string name="history_trend">Trend</string>
+    <string name="history_trend_n">Last %1$d</string>
+    <string name="avg_download">Avg. download</string>
+    <string name="avg_upload">Avg. upload</string>
+    <string name="clear_history_title">Clear history?</string>
+    <string name="clear_history_text">All saved test results will be deleted.</string>
+    <string name="detail_test">Test</string>
+    <string name="detail_server">Server</string>
+    <string name="detail_type">Type</string>
+    <string name="detail_ping_jitter">Ping jitter</string>
+    <string name="detail_ping_jitter_tcp">Ping jitter (TCP)</string>
+    <string name="detail_duration">Duration</string>
+    <string name="detail_data">Data transferred</string>
+    <string name="detail_loaded_latency">Latency under load</string>
+    <string name="detail_retransmits">Retransmits</string>
+    <string name="detail_jitter">Jitter</string>
+    <string name="detail_loss">Packet loss</string>
+
+    <!-- Servers -->
+    <string name="servers_subtitle">Tests run against the selected server</string>
+    <string name="edit_server">Edit server</string>
+    <string name="field_host">Host name or IP address</string>
+    <string name="field_port">Port</string>
+    <string name="field_port_hint" tools:ignore="TypographyDashes">One port, or a range like 5201-5209</string>
+    <string name="field_name">Name</string>
+    <string name="field_name_hint">Optional</string>
+    <string name="help_title">Your own server</string>
+    <string name="help_text">To test your home network, run iperf3 on a computer on the same network and add its IP address here:</string>
+    <string name="help_text_2">iperf3 is free for Windows, macOS and Linux. Public servers on the internet are often busy; the app tries the next port of a range when one is.</string>
+</resources>
